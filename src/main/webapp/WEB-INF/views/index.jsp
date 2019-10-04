@@ -4,7 +4,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Upload Page</title>
+<title>Upload Page</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"><!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 	<h2>Hello World!</h2>
@@ -17,5 +18,13 @@
 		</table>
 	</form>
 	<span style="color: green; font-size: 14px;">${msg}</span>
+	
+	<button class="btn btn-primary" onclick="downloadFile()">Download</button>
 </body>
+<script>
+function downloadFile(){
+	console.log("test")
+	window.location.href="downloadFile";
+}
+</script>
 </html>
